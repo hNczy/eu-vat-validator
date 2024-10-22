@@ -1,8 +1,7 @@
 services:
   app:
-    image: hnczy/eu-vat-validator
-    build:
-      dockerfile: Dockerfile
+    image: eu-vat-validator
+    build: .
     volumes:
       - .:/var/www/app
       - ./www.conf:/usr/local/etc/php/conf.d/www.conf
