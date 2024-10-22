@@ -5,5 +5,7 @@ RUN ( curl -sSLf https://github.com/mlocati/docker-php-extension-installer/relea
 
 USER www-data
 
-ADD . /var/www
+ADD . /var/www/app
 ADD www.conf /usr/local/etc/php/conf.d/www.conf
+
+WORKDIR /var/www/app
